@@ -2,14 +2,23 @@
 <html lang = "en">
 <head>
     <title>Home</title>
-    <h1 style= "color: rgb(28, 49, 109)">T is for Technology
+    <h1 style= "color: rgb(102, 17, 123, 0.879)">T is for Technology
     </h1style>
     <br></br>
     <style>
-        .comporgbutton{
-            background-color: rgb(197, 231, 197);
+        .buttoncontainer{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15 px 30 px;
+            margin-top: 30 px;
+            justify-content: center;
+            max-width: 400 px;
+        }
+
+        .btn{
+            background-color: rgba(173, 94, 199, 0.499);
             border: none;
-            color:darkgreen;
+            color:rgb(102, 17, 123, 0.879);
             padding: 15px 30px;
             text-align: center;
             text-decoration: none;
@@ -17,136 +26,55 @@
             font-size: 24px;
             margin: 5px 5px;
             cursor: pointer;
-            border-radius: 5px;  
+            border-radius: 25px;  
         }
-    </style>
-</head>
-<body>
-    <a href="../courses/techCourses/comporg.html" class="comporgbutton">
-
-    CDA3101</a>
-
-</body>
-
-<style>
-    .dsabutton{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
 </style>
 </head>
 <body>
-<a href="../courses/techCourses/dsa.html" class=" dsabutton">
 
-COP3530</a>
-
+</body>
+    <body style = "background-color: rgb(232, 207, 238)">
+        <div class="button-wrapper">
+    <div class="button-container">
+        <a href="../courses/techCourses/comporg.html" class="btn">CDA3101</a>
+        <a href="../courses/techCourses/dsa.html" class="btn">COP3530</a>
+        <a href="../courses/techCourses/os.html" class="btn">COP4600</a>
+        <a href="../courses/techCourses/prog1.html" class="btn">COP3502C</a>
+        <a href="../courses/techCourses/prog2.html" class="btn">COP3503C</a>
+        <a href="../courses/techCourses/proginr.html" class="btn">STA3100</a>
+    </div>
+    <br>
+    <a href="../templates/homepage.html" class="Home">
+        Home</a>
 </body>
 
 <style>
-    .osbutton{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
+    h1 {
+            text-align: center;
+            font-size: 45px;
+        }
+        .button-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns for better alignment */
+            gap: 15px 30px; /* Adjusts row and column spacing */
+            margin-top: 30px;
+            justify-content: center;
+            max-width: 400px; /* Prevents stretching */
+        }
 </style>
-</head>
-<body>
-<a href="../courses/techCourses/os.html" class=" osbutton">
 
-COP4600</a>
-
-</body>
-
-<style>
-    .prog1button{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/techCourses/prog1.html" class=" prog1button">
-
-COP3502C</a>
-
-</body>
-
-<style>
-    .prog2button{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/techCourses/prog2.html" class=" prog2button">
-
-COP3503C</a>
-
-</body>
-
-<style>
-    .proginrbutton{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/techCourses/proginr.html" class=" proginrbutton">
-
-STA3100</a>
-
-</body>
 <style>
     .Home{
-        background-color: rgb(197, 231, 197);
+        background-color: rgb(173, 94, 199, 0.499);
         border: none;
-        color:rgb(249, 119, 119);
+        color:rgb(102, 17, 123, 0.879);
         padding: 15px 30px;
         text-align: center;
         text-decoration: none;
@@ -154,13 +82,11 @@ STA3100</a>
         font-size: 24px;
         margin: 5px 5px;
         cursor: pointer;
-        border-radius: 5px;  
+        border-radius: 25px;  
     }
 </style>
-</head>
-<body>
-<a href="../templates/homepage.html" class="Home"> Home</a>
 
-</body>
 
-</body>
+
+
+
