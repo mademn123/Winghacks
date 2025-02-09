@@ -6,7 +6,15 @@
     </h1style>
     <br></br>
     <style>
-        .circuitbutton{
+        .buttoncontainer{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap:15 px 30 px;
+            margin-top: 30 px;
+            justify-content:center;
+            max-width: 400 px;
+        }
+        .buttons{
             background-color: rgb(255, 248, 157);
             border: none;
             color:rgb(209, 167, 28);
@@ -17,147 +25,58 @@
             font-size: 24px;
             margin: 5px 5px;
             cursor: pointer;
-            border-radius: 5px;  
+            border-radius: 25px;  
         }
-    </style>
-</head>
-<body>
-    <a href="../courses/engCourses/circuits.html" class=" circuitbutton">
-
-    EEL3111</a>
-
-</body>
-<style>
-    .ddbutton{
-        background-color: rgb(255, 248, 157);
-        border: none;
-        color:rgb(209, 167, 28);
-        padding: 15px 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
 </style>
 </head>
 <body>
-<a href="../courses/engCourses/digitaldesign.html" class=" ddbutton">
-
-EEL4712C</a>
-
-</body>
-<style>
-    .dlbutton{
-        background-color: rgb(255, 248, 157);
-        border: none;
-        color:rgb(209, 167, 28);
-        padding: 15px 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/engCourses/digitallogic.html" class=" dlbutton">
-
-EEL3701C</a>
-
-</body>
-
-<style>
-    .dybutton{
-        background-color: rgb(255, 248, 157);
-        border: none;
-        color:rgb(209, 167, 28);
-        padding: 15px 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/engCourses/dynamics.html" class=" dybutton">
-
-EGM3400</a>
-
-</body>
-
-<style>
-    .mbutton{
-        background-color: rgb(255, 248, 157);
-        border: none;
-        color:rgb(209, 167, 28);
-        padding: 15px 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/engCourses/materials.html" class=" mbutton">
-
-EMA3010</a>
-
-</body>
-
-<style>
-    .mpbutton{
-        background-color: rgb(255, 248, 157);
-        border: none;
-        color:rgb(209, 167, 28);
-        padding: 15px 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/engCourses/microprocessors.html" class=" mpbutton">
-
-EEL4744</a>
-
-</body>
-
-<style>
-    .Home{
-        background-color: rgb(255, 248, 157);
-        border: none;
-        color:rgb(249, 119, 119);
-        padding: 15px 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
+    <body style = "background-color:rgb(255, 253, 223)">
+        <div class="button-wrapper">
+<div class = "button-container">
+    <a href="../courses/engCourses/circuits.html" class=" buttons">EEL3111</a>
+    <a href="../courses/engCourses/digitaldesign.html" class=" buttons">EEL4712C</a>
+    <a href="../courses/engCourses/digitallogic.html" class=" buttons">EEL3701C</a>
+    <a href="../courses/engCourses/dynamics.html" class=" buttons">EGM3400</a>
+    <a href="../courses/engCourses/materials.html" class=" buttons">EMA3010</a>
+    <a href="../courses/engCourses/microprocessors.html" class=" buttons">EEL4744</a>
+</div>
+<br>
 <a href="../templates/homepage.html" class="Home"> Home</a>
-
 </body>
+
+<style>
+    h1 {
+            text-align: center;
+            font-size: 45px;
+        }
+        .button-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 15px 30px; 
+            margin-top: 30px;
+            justify-content: center;
+            max-width: 400px;
+        }
+</style>
+<style>
+.Home{
+    background-color: rgb(255, 248, 157);
+    border: none;
+    color:rgb(209, 167, 28);
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 5px 5px;
+    cursor: pointer;
+    border-radius: 25px;  
+    }
+</style>
