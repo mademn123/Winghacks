@@ -1,121 +1,76 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
     <title>Home</title>
     <style>
-        h1{
-                
+        h1 {
             font-size: 40px;
             text-align: center;
         }
-        h2{
+
+        h2 {
             font-size: 30px;
             text-align: center;
         }
-        p{
+
+        p {
             font-size: 20px;
             text-align: center;
         }
-    </style>
-    <h1 style= "color:firebrick">Welcome to UFStudyCourses!</h1>
+</style>
+    <h1 style = "color: rgb(82, 8, 74)">Welcome to UFStudyCourses!</h1>
     <h2 style= "color: rgb(76, 61, 61)">Find Your Course
     </h1style>
     <br></br>
-    <style>
-        .sbutton{
-            background-color: rgb(197, 231, 197);
-            border: none;
-            color:darkgreen;
-            padding: 20px 20px;
+<style>
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
-            font-size: 40px;
-            margin: 5px 5px;
+            font-size: 200px;
             cursor: pointer;
-            border-radius: 5px;  
-        }
-    </style>
-</head>
-<body>
-    <a href="../resources/science.html" class=" sbutton">
-
-    S</a>
-
-</body>
-<head>
-    <style>
-        .tbutton {
-            background-color: rgba(173, 94, 199, 0.499);
+            border-radius: 25px;
             border: none;
-            color: rgb(102, 17, 123, 0.879);
-            padding: 20px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block; 
-            font-size: 40px;
-            margin: 5px 5px;
-            cursor: pointer;
-            border-radius: 5px; 
+            font-weight: bold;
         }
+
+
+        .sbutton { background-color: rgb(197, 231, 197); color: darkgreen; }
+        .tbutton { background-color: rgba(173, 94, 199, 0.499); color: rgb(102, 17, 123, 0.879); }
+        .ebutton { background-color: rgb(255, 248, 157); color: rgb(209, 167, 28); }
+        .mbutton { background-color: rgba(119, 155, 206, 0.693); color: rgb(26, 78, 127); }
 
     </style>
 </head>
-<body>
-    <a href="../resources/technology.html" class = "tbutton"> T</a>
-</body>
-<head>
-    <style>
-        .ebutton {
-            background-color: rgb(255, 248, 157);
-            border: none;
-            color: rgb(209, 167, 28);
-            padding: 20px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block; 
-            font-size: 40px;
-            margin: 5px 5px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-    </style>
-</head>
-<body>
-    <a href="../resources/engineering.html" class = "ebutton"> E</a>
-</body>
-<head>
-    <style>
-        .mbutton {
-            background-color: rgba(119, 155, 206, 0.693);
-            border: none;
-            color: rgb(26, 78, 127);
-            padding: 20px 12px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block; 
-            font-size: 40px;
-            margin: 5px 5px;
-            cursor: pointer;
-            border-radius: 5px; 
-        }
-
-    </style>
-</head>
-<body>
-    <a href="../resources/math.html" class = "mbutton"> M</a>
 </body>
 <body style = "background-color: rgb(221, 191, 196)">
 </body>
-<head>
 <body>
-    <h2 style= "color:firebrick">About</h1>
-    <p style= "color:rgb(107, 80, 80)">This is your one-stop shop for free
-    resources on common UF STEM courses!</p>
-    <p style= "color:rgb(107, 80, 80)">Disclaimer: We are not claiming any
-        ownership to any links provided. This
-        website is meant to be informational only.</p>
+    <div class="button-container">
+        <a href="../resources/science.html" class="button sbutton">S</a>
+        <a href="../resources/technology.html" class="button tbutton">T</a>
+        <a href="../resources/engineering.html" class="button ebutton">E</a>
+        <a href="../resources/math.html" class="button mbutton">M</a>
+    </div>
+
+    <h2 style= "color:rgb(76, 61, 61)">About</h1>
+        <p style= "color: rgb(107, 80, 80)">This is your one-stop shop for free
+        resources on common UF STEM courses!</p>
+        <p style= "color: rgb(107, 80, 80)">Disclaimer: We are not claiming any
+            ownership to any links provided. This
+            website is meant to be informational only.</p>
+
 </body>
-</head>
 </html>
