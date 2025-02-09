@@ -2,14 +2,23 @@
 <html lang = "en">
 <head>
     <title>Home</title>
-    <h1 style= "color: rgb(21, 108, 30)">M is for Math
+    <h1 style= "color: rgb(26, 78, 127)">M is for Math</h1>
     </h1style>
     <br></br>
     <style>
-        .calc1button{
-            background-color: rgb(197, 231, 197);
+        .buttoncontainer{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15 px 30 px;
+            margin-top: 30 px;
+            justify-content: center;
+            max-width: 400 px;
+        }
+
+        .btn{
+            background-color: rgba(119, 155, 206, 0.693);
             border: none;
-            color:darkgreen;
+            color:rgb(26, 78, 127);
             padding: 15px 30px;
             text-align: center;
             text-decoration: none;
@@ -17,203 +26,58 @@
             font-size: 24px;
             margin: 5px 5px;
             cursor: pointer;
-            border-radius: 5px;  
+            border-radius: 25px;  
         }
-    </style>
-</head>
-<body>
-    <a href="../courses/mathCourses/calc1.html" class=" calc1button">
-
-    MAC2311</a>
-
-</body>
-
-<style>
-    .calc2button{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
 </style>
 </head>
 <body>
-<a href="../courses/mathCourses/calc2.html" class=" calc2button">
 
-MAC2312</a>
-
+</body>
+    <body style = "background-color: rgb(202, 230, 241)">
+        <div class="button-wrapper">
+    <div class="button-container">
+        <a href="../courses/mathCourses/calc1.html" class="btn">MAC2311</a>
+        <a href="../courses/mathCourses/calc2.html" class="btn">MAC2312</a>
+        <a href="../courses/mathCourses/calc3.html" class="btn">MAC2313</a>
+        <a href="../courses/mathCourses/complinearalgebra.html" class="btn">MAS3114</a>
+        <a href="../courses/mathCourses/diffeq.html" class="btn">MAP2302</a>
+        <a href="../courses/mathCourses/discrete.html" class="btn">COT3100</a>
+        <a href="../courses/mathCourses/setslogic.html" class="btn">MHF3202</a>
+        <a href="../courses/mathCourses/stats1.html" class="btn">STA2023</a>
+        <a href="../courses/mathCourses/stats2.html" class="btn">STA3024</a>
+    </div>
+    <br>
+    <a href="../templates/homepage.html" class="Home">
+        Home</a>
 </body>
 
 <style>
-    .calc3button{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
+    h1 {
+            text-align: center;
+            font-size: 45px;
+        }
+        .button-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px 30px;
+            margin-top: 30px;
+            justify-content: center;
+            max-width: 400px; 
+        }
 </style>
-</head>
-<body>
-<a href="../courses/mathCourses/calc3.html" class=" calc3button">
 
-MAC2313</a>
-
-</body>
-
-<style>
-    .complinearalgebrabutton{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/mathCourses/complinearalgebra.html" class=" complinearalgebrabutton">
-
-MAS3114</a>
-
-</body>
-
-<style>
-    .diffeqbutton{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/mathCourses/diffeq.html" class=" diffeqbutton">
-
-MAP2302</a>
-
-</body>
-
-<style>
-    .discretebutton{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/scienceCourses/discrete.html" class=" discretebutton">
-
-COT3100</a>
-
-</body>
-
-<style>
-    .setslogicbutton{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/mathCourses/setslogic.html" class="setslogicbutton">
-
-MHF3202</a>
-
-</body>
-
-<style>
-    .stats1button{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/mathCourses/stats1.html" class="stats1button">
-
-STA2023</a>
-
-</body>
-
-<style>
-    .stats2button{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/mathCourses/stats2.html" class="stats2button">
-
-STA3024</a>
 <style>
     .Home{
-        background-color: rgb(197, 231, 197);
+        background-color: rgb(119, 155, 206, 0.693);
         border: none;
-        color:rgb(249, 119, 119);
+        color:rgb(26, 78, 127);
         padding: 15px 30px;
         text-align: center;
         text-decoration: none;
@@ -221,12 +85,11 @@ STA3024</a>
         font-size: 24px;
         margin: 5px 5px;
         cursor: pointer;
-        border-radius: 5px;  
+        border-radius: 25px;  
     }
 </style>
-</head>
-<body>
-<a href="../templates/homepage.html" class="Home"> Home</a>
 
-</body>
-</body>
+
+
+
+
