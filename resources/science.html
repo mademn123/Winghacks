@@ -2,14 +2,23 @@
 <html lang = "en">
 <head>
     <title>Home</title>
-    <h1 style= "color: rgb(21, 108, 30)">S is for Science
+    <h1 style= "color: rgb(21, 108, 30)">S is for Science</h1>
     </h1style>
     <br></br>
     <style>
-        .bio1button{
-            background-color: rgb(197, 231, 197);
+        .buttoncontainer{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15 px 30 px;
+            margin-top: 30 px;
+            justify-content: center;
+            max-width: 400 px;
+        }
+
+        .btn{
+            background-color: rgba(119, 206, 142, 0.693);
             border: none;
-            color:darkgreen;
+            color:rgb(21, 108, 30);
             padding: 15px 30px;
             text-align: center;
             text-decoration: none;
@@ -17,203 +26,58 @@
             font-size: 24px;
             margin: 5px 5px;
             cursor: pointer;
-            border-radius: 5px;  
+            border-radius: 25px;  
         }
-    </style>
-</head>
-<body>
-    <a href="../courses/scienceCourses/bio1.html" class=" bio1button">
-
-    BSC2010</a>
-
-</body>
-
-<style>
-    .bio2button{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
 </style>
 </head>
 <body>
-<a href="../courses/scienceCourses/bio2.html" class=" bio2button">
 
-BSC2011</a>
-
+</body>
+    <body style = "background-color: rgb(208, 240, 220)">
+        <div class="button-wrapper">
+    <div class="button-container">
+        <a href="../courses/scienceCourses/bio1.html" class="btn">BSC2010</a>
+        <a href="../courses/scienceCourses/bio2.html" class="btn">BSC2011</a>
+        <a href="../courses/scienceCourses/chem1.html" class="btn">CHM2045</a>
+        <a href="../courses/scienceCourses/chem2.html" class="btn">CHM2046</a>
+        <a href="../courses/scienceCourses/orgo1.html" class="btn">CHM2210</a>
+        <a href="../courses/scienceCourses/orgo2.html" class="btn">CHM2211</a>
+        <a href="../courses/scienceCourses/physics1.html" class="btn">PHY2048</a>
+        <a href="../courses/scienceCourses/physics2.html" class="btn">PHY2049</a>
+        <a href="../courses/scienceCourses/thermodynamics.html" class="btn">EML3100</a>
+    </div>
+    <br>
+    <a href="../templates/homepage.html" class="Home">
+        Home</a>
 </body>
 
 <style>
-    .chem1button{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
+    h1 {
+            text-align: center;
+            font-size: 45px;
+        }
+        .button-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px 30px;
+            margin-top: 30px;
+            justify-content: center;
+            max-width: 400px; 
+        }
 </style>
-</head>
-<body>
-<a href="../courses/scienceCourses/chem1.html" class=" chem1button">
 
-CHM2045</a>
-
-</body>
-
-<style>
-    .chem2button{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/scienceCourses/chem2.html" class=" chem2button">
-
-CHM2046</a>
-
-</body>
-
-<style>
-    .orgo1button{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/scienceCourses/orgo1.html" class=" orgo1button">
-
-CHM2210</a>
-
-</body>
-
-<style>
-    .orgo2button{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/scienceCourses/orgo2.html" class=" orgo2button">
-
-CHM2211</a>
-
-</body>
-
-<style>
-    .physics1button{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/scienceCourses/physics1.html" class=" physics1button">
-
-PHY2048</a>
-
-</body>
-
-<style>
-    .physics2button{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/scienceCourses/physics2.html" class=" physics2button">
-
-PHY2049</a>
-
-</body>
-
-<style>
-    .thermodynamicsbutton{
-        background-color: rgb(197, 231, 197);
-        border: none;
-        color:darkgreen;
-        padding: 15px 30px;        
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        margin: 5px 5px;
-        cursor: pointer;
-        border-radius: 5px;  
-    }
-</style>
-</head>
-<body>
-<a href="../courses/scienceCourses/thermodynamics.html" class=" thermodynamicsbutton">
-
-EML3100</a>
 <style>
     .Home{
-        background-color: rgb(197, 231, 197);
+        background-color: rgb(119, 206, 142, 0.693);
         border: none;
-        color:rgb(249, 119, 119);
+        color:rgb(21, 108, 30);
         padding: 15px 30px;
         text-align: center;
         text-decoration: none;
@@ -221,11 +85,11 @@ EML3100</a>
         font-size: 24px;
         margin: 5px 5px;
         cursor: pointer;
-        border-radius: 5px;  
+        border-radius: 25px;  
     }
 </style>
-</head>
-<body>
-<a href="../templates/homepage.html" class="Home"> Home</a>
 
-</body>
+
+
+
+
